@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="a99c93b2-ce1b-4b6c-8a95-dc6dbb2dbb59" name="GreenRiverDev2" url="http://aplusplus.greenriverdev.com/public_html/">
+        <fileTransfer host="aplusplus.greenriverdev.com" port="18765" rootFolder="/home/aplusplu/public_html" accessType="SFTP">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+          <option name="port" value="18765" />
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>

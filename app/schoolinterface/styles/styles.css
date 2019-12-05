@@ -1,0 +1,140 @@
+/** Body style**/
+/*body*/
+/*{*/
+    /*background-image: url("../images/background.png");*/
+/*}*/
+
+/** header block styles**/
+#headtext
+{
+    font-family: "verdana" !important;
+    padding: 10px;
+    background-color: rgba(147, 147, 147, 1);
+}
+
+/*h1*/
+/*{*/
+/*    color: white;*/
+/*    text-shadow: 2px 1px black;*/
+/*    display: inline;*/
+/*}*/
+/*.card-header*/
+/*{*/
+/*    background:rgba(255,255,255,0.9)*/
+/*}*/
+
+#logout
+{
+    color: black;
+    float: right;
+}
+
+/**Container, div styles**/
+#guestbook
+{
+    width: 70%;
+    border-top: 2px solid rgb(197, 212, 255);
+    -webkit-box-shadow: 11px -19px 101px -37px rgba(0,0,0,0.52);
+    -moz-box-shadow: 11px -19px 101px -37px rgba(0,0,0,0.52);
+    box-shadow: 11px -19px 101px -37px rgba(0,0,0,0.52);
+}
+
+#mainjumbo
+{
+    /*background-image: url("../files/mountain.jpg");*/
+    background-size: cover;
+    width: 100%;
+}
+
+#main-container
+{
+    padding: 0px !important;
+}
+
+.card:hover
+{
+    -webkit-box-shadow: 2px -1px 31px 13px rgba(0,0,0,0.35);
+    -moz-box-shadow: 2px -1px 31px 13px rgba(0,0,0,0.35);
+    box-shadow: 2px -1px 31px 13px rgba(0,0,0,0.35);
+}
+#about
+{
+    padding-top: 0px;
+    text-align: justify;
+    font-weight: bold;
+}
+
+/** Button styles, links**/
+
+a[name="link"]
+{
+    width: 100px;
+    border-right: 1px solid rgba(0, 7, 27, 0.44);
+    color: #292081;
+}
+
+a[name="link"]:hover
+{
+    color: white;
+    text-shadow: 2px 1px black;
+
+
+}
+#b-button
+{
+    margin-bottom: 3%;
+}
+
+/** Error styles **/
+.err
+{
+    color: #D8000C;
+    background-color: #FFD2D2;
+    float: left;
+    padding: 5px 15px;
+    box-shadow:1px 1px 3px #888;
+    display: block;
+    border-radius: 15px;
+}
+
+.headline
+{
+    width: 565px;
+    font: 2.65em CallunaRegular;
+    letter-spacing: .075em;
+    float: left;
+    padding: 0px 0 10px 5px;
+    margin: 0;
+    font-weight: bold;
+
+    /*border-top: 2px dotted #858585;*/
+    /*border-bottom: 2px dotted #858585;*/
+    -webkit-transform: rotate(-4deg);
+    -moz-transform: rotate(-4deg);
+    /*font-family: 'Open Sans', sans-serif;*/
+    /*color: white;*/
+    /*text-decoration: none;*/
+    /*font-size: 50px;*/
+    /*font-weight: 800;*/
+    /*letter-spacing: -3px;*/
+    /*line-height: 1;*/
+    /*text-shadow: darkslategray 3px 2px 0;*/
+    /*position: relative;*/
+}
+.heading
+{
+    width: 565px;
+    font: 2.65em CallunaRegular;
+    letter-spacing: .075em;
+    padding: 10px 0 10px 5px;
+    margin: 0;
+    border-top: 4px dotted #858585;
+    border-bottom: 4px dotted #858585;
+    -webkit-transform: rotate(-1deg);
+    -moz-transform: rotate(-1deg);
+    color: whitesmoke;
+}
+
+
+
+

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Upload Forms</title>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link rel="icon" type="image/png" href="images/icons/favicon.ico"/>
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="vendor/animate/animate.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="vendor/css-hamburgers/hamburgers.min.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="vendor/select2/select2.min.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="css/util.css">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+
+    <link rel="stylesheet" href="./styles/styles.css">
+
+</head>
+<body>
+
+<div class="limiter">
+    <h1 class="headline">
+        <strong class="card-header fa fa-user"> School Admin</strong></h1>
+    <div class="card-header">
+        <div class="text-center btn-block">
+            <a id="logout" href="./"><strong class=" float-right text-dark  card-header fa fa-logout btn-warning ">
+                Logout</strong></a>
+<!--            <a class="card-header fa fa-database" type="button" href="forms"><strong-->
+<!--            > Review All Forms </strong>-->
+<!--            </a>-->
+            <div class="container-login100">
+
+                <div class="wrap-login100">
+
+                    <!--Start the login menu-->
+                    <form action="#" method="post" class="login100-form validate-form">
+				<span class="login100-form-title">
+						Upload Forms
+					</span>
+
+                        <hr>
+                        <!-- User login information -->
+                        <div class="wrap-input100 validate-input" data-validate="Valid email is required: ex@abc.xyz">
+                            <input id="file" type="file"
+                                   accept="application/docx" class="btn-outline-success" name="file"
+                                   value="{{ @file }}">
+                        </div>
+
+                        <div class="wrap-input100 validate-input" data-validate="Password is required">
+                            <input type="text" id="class" class="input100 mt-5" placeholder="class Number"
+                                   name="class" value="{{ @class}}">
+
+                            <span class="focus-input100"></span>
+                            <span class="symbol-input100">
+							<i class="fa fa-sort-numeric-asc" aria-hidden="true"></i>
+						</span>
+                        </div>
+                        <div class="wrap-input100 validate-input" data-validate="Password is required">
+                            <input type="text" id="event_name" class="input100" placeholder="Event Name"
+                                   name="event_name" value="{{ @event_name }}">
+
+                            <span class="focus-input100"></span>
+                            <span class="symbol-input100">
+							<i class="fa fa-pencil-square" aria-hidden="true"></i>
+						</span>
+                        </div>
+                        <div class="wrap-input100 validate-input" data-validate="Password is required">
+                            <input type="date" id="event_date" class="input100" placeholder="Event Date"
+                                   name="event_date" value="{{ @event_date }}">
+
+                            <span class="symbol-input100">
+							<i class="fa fa-calendar-o" aria-hidden="true"></i>
+						</span>
+                        </div>
+
+                        <!-- Check for Uploading file validation-->
+                        <check if="{{ @errors['upload'] }}">
+                            <span class="err"> {{ @errors['upload'] }}</span>
+                        </check>
+                        <!--login button-->
+                        <div class="container-login100-form-btn">
+                            <button type="submit" name = "uploadform" class="login100-form-btn">Upload form</button>
+                           
+                        </div>
+                    </form>
+                    <div class="login100-pic js-tilt" data-tilt>
+                        <a class="login100-form-btn" type="button" href="forms">
+                            <strong> Review All Forms </strong>
+                        </a>
+                        <hr>
+                        <img src="images/upload.png" alt="Upload Logo">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+            crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+            integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+            crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+            integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+            crossorigin="anonymous"></script>
+</body>
+
+</html>

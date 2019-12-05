@@ -1,0 +1,31 @@
+{
+  "name" : "aplusplus/school-interface",
+  "authors" :
+  [
+    {
+      "name" : "Evan Wheeler",
+      "email" : "tluu9@mail.greenriver.edu"
+    },
+    {
+      "name" : "Carmen Gallardo",
+      "email" : "tluu9@mail.greenriver.edu"
+    },
+    {
+      "name" : "Guangpeng Wu",
+      "email" : "tluu9@mail.greenriver.edu"
+    },
+    {
+      "name" : "Suhkveer Jawandha",
+      "email" : "tluu9@mail.greenriver.edu"
+    }
+  ],
+  "require" :
+  {
+    "bcosca/fatfree-core" : "dev-master",
+    "mpdf/mpdf": "^8.0"
+  },
+
+  "autoload": {
+    "classmap": ["classes/"]
+  }
+}
